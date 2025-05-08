@@ -238,3 +238,16 @@ document.addEventListener('DOMContentLoaded', function() {
     bgVideo.play().catch(e => console.log("Video oynatma hatası:", e));
   }
 });
+
+
+
+// 5 saniye sonra hakkımda bölümüne otomatik kaydırma
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, 5000); // 5000 milisaniye = 5 saniye
+});
+
