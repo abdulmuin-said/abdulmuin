@@ -1272,6 +1272,21 @@
   
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+            <script>
+            // 5 saniye sonra hakkımda bölümüne otomatik kaydırma
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(function() {
+                    const aboutSection = document.getElementById('about');
+                    if (aboutSection) {
+                        aboutSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 4000); // 5000 milisaniye
+            });
+            </script>
+
+            
   
   </body>
   </html>
